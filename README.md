@@ -35,6 +35,12 @@ Shopcard :Membuat card yang berisi setiap ShopItem beserta gfungsi snackbar saat
 ShopItem : class yang menyimpan objek-objek yang akan ditampilkan berupa button Lihat Item, Tambah Item, dan Logout
 Text, Icon, Container, Padding, InkWell : Mengatur tampilan dan event action yang sesuai dalam setiap ShopCard
 
+column : menemapilkann childern tersebut secara vertikal
+
+EdgeInsets: Widget Text untuk menampilkan tulisan dengan alignment center dan style yang sesuai
+
+text align : mengatur letak text
+
 <h1S> step-step penyelesaian </h1S>
 setelah membuat code seperti di tutorial saya melakukan penambahan bonus dengan memberikan warna-warna yang berbeda pada masing masing tombol
 , dengan cara : menambahkan attribute dan constructure pada class ShopItem dengan data type Color den dengan nama variabel color

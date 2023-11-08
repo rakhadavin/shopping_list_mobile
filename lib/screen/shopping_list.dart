@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// TODO: Impor drawer yang sudah dibuat sebelumnya
+import 'package:shopping_list/widgets/left_drawer.dart';
 
 class ShopFormPage extends StatefulWidget {
   const ShopFormPage({super.key});
@@ -27,6 +27,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
         foregroundColor: Colors.white,
       ),
       // TODO: Tambahkan drawer yang sudah dibuat di sini
+      endDrawer: LeftDrawer(),
       body: Form(
           key: _formKey,
           child: SingleChildScrollView(
@@ -66,7 +67,6 @@ class _ShopFormPageState extends State<ShopFormPage> {
                         borderRadius: BorderRadius.circular(5.0),
                       ),
                     ),
-                    // TODO: Tambahkan variabel yang sesuai
                     onChanged: (String? value) {
                       setState(() {
                         _price = int.parse(value!);
@@ -128,6 +128,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text('Nama: $_name'),
+                                      Text('Harga: $_price'),
+                                      Text('Deskripsi: $_description'),
                                       // TODO: Munculkan value-value lainnya
                                     ],
                                   ),

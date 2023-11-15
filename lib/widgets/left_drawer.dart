@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_list/screen/list_product.dart';
 import 'package:shopping_list/screen/menu.dart';
 // Impor drawer widget
 // TODO: Impor halaman ShopFormPage jika sudah dibuat
@@ -52,6 +53,10 @@ class LeftDrawer extends StatelessWidget {
             title: const Text('Tambah Produk'),
             // Bagian redirection ke ShopFormPage
             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductPage()),
+              );
               /*
     TODO: Buatlah routing ke ShopFormPage di sini,
     setelah halaman ShopFormPage sudah dibuat.

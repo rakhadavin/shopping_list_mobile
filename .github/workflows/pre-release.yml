@@ -44,6 +44,5 @@ jobs:
       - name: Pre-release APK by uploading it to Artifacts
         uses: actions/upload-artifact@v3
         with:
-          allowUpdates: true
           name: APKS
           path: build/app/outputs/flutter-apk/*.apk
